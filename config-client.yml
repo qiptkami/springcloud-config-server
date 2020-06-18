@@ -18,7 +18,7 @@ eureka:
 server:
   port: 8889
 spring:
-  profiles: dev
+  profiles: test
   application:
     name: springcloud-provider-dept
 eureka:
