@@ -1,25 +1,27 @@
 spring:
-    profile:
-        active: dev
+  profiles:
+    active: dev
 ---
 server:
-    port: 8888
+  port: 8888
+
 spring:
-    profile: dev
-    application:
-        name: springcloud-provider-dept
+  profiles: dev
+  application:
+    name: springcloud-provider-dept
 eureka:
-    client:
-        service-url:
-            defaultZone: http://yiqiandewo1:7001/eureka/,http://yiqiandewo2:7002/eureka/
+  client:
+    service-url:
+      defaultZone: http://yiqiandewo1:7001/eureka/,http://yiqiandewo2:7002/eureka/
+
 ---
 server:
-    port: 8889
+  port: 8889
 spring:
-    profile: test
-    application:
-        name: springcloud-provider-dept
+  profiles: dev
+  application:
+    name: springcloud-provider-dept
 eureka:
-    client:
-        service-url:
-            defaultZone: http://yiqiandewo1:7001/eureka/,http://yiqiandewo2:7002/eureka/
+  client:
+    service-url:
+      defaultZone: http://yiqiandewo1:7001/eureka/,http://yiqiandewo2:7002/eureka/
